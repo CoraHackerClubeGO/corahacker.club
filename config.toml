@@ -1,0 +1,23 @@
+base_url = "https://corahacker.club"
+compile_sass = true
+theme = "after-dark"
+taxonomies = [
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
+output_dir = "public"
+generate_feed = true
+title = "Cora Hacker Club"
+description = ""
+
+[markdown]
+highlight_code = false
+render_emoji = true
+
+[extra]
+after_dark_title = "Cora Hacker Club"
+after_dark_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categorias"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+]
