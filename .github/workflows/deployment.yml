@@ -12,4 +12,3 @@ jobs:
     - name: Mostra reposta
       run: |
         echo ${{ steps.deploy.outputs.response }}
-        echo ${{ steps.deploy.outputs.headers }}
