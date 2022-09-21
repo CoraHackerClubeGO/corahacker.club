@@ -1,0 +1,15 @@
+name: Deployment
+on: [push]
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Chama hook
+      uses: fjogeleit/http-request-action@v1
+      id: deploy
+      with:
+        url: 'https://corahacker.club/cgi-bin/webhook'
+    - name: Mostra reposta
+      run: |
+        echo ${{ steps.deploy.outputs.response }}
+        echo ${{ steps.deploy.outputs.headers }}
