@@ -5,7 +5,7 @@ taxonomies = [
     {name = "categories", feed = true},
     {name = "tags", feed = true},
 ]
-output_dir = "public"
+output_dir = "www"
 generate_feed = true
 title = "Cora Hacker Club"
 description = ""
